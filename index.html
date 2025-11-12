@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vee Link Technologies — Training & Placement</title>
+  <meta name="description" content="Vee Link Technologies - Training & Placement | Data Analytics, Fullstack, Manual & Automation Testing, ML, Data Science" />
+
+  <!-- Simple deployment instructions (remove this comment before publishing):
+       1) Create a public GitHub repo named `vee-link-technologies`.
+       2) Save this file as `index.html` at the repo root and push to main branch.
+       3) In GitHub repo Settings → Pages → Source: main branch → Save.
+       4) Visit https://yourusername.github.io/vee-link-technologies/
+  -->
+
+  <style>
+    :root{
+      --bg:#f6fff6; /* soft green */
+      --accent:#2aa75b; /* green */
+      --accent-dark:#1f8a44;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.7);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#f0fff0);color:#0b2a17}
+    a{color:var(--accent);text-decoration:none}
+    header{position:fixed;top:0;left:0;right:0;backdrop-filter: blur(6px);background:rgba(255,255,255,0.6);box-shadow:0 6px 18px rgba(10,10,10,0.04);z-index:40}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-dark));display:flex;align-items:center;justify-content:center;color:white;font-weight:800}
+    .nav-links{display:flex;gap:18px;align-items:center}
+    .cta{background:var(--accent);color:white;padding:8px 14px;border-radius:10px;font-weight:600}
+
+    /* Hero */
+    .hero{padding:120px 0 60px}
+    .hero-grid{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center}
+    .headline{font-size:34px;line-height:1.05;margin:0 0 12px}
+    .tagline{color:var(--muted);margin-bottom:18px}
+    .features{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{background:var(--card);padding:8px 10px;border-radius:999px;box-shadow:0 6px 18px rgba(10,10,10,0.05);font-weight:600}
+
+    .hero-card{background:linear-gradient(180deg,var(--glass),rgba(255,255,255,0.9));padding:20px;border-radius:14px;box-shadow:0 20px 40px rgba(16,24,16,0.08)}
+    .hero-card h4{margin:0 0 8px}
+    .hero-card p{margin:0;color:var(--muted)}
+
+    /* Courses */
+    section.courses{padding:40px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .course{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 24px rgba(10,10,10,0.04);transition:transform .32s ease,box-shadow .32s ease}
+    .course:hover{transform:translateY(-8px);box-shadow:0 28px 60px rgba(10,10,10,0.08)}
+    .course h5{margin:0 0 6px}
+    .course p{margin:0;color:var(--muted);font-size:14px}
+
+    /* Testimonials */
+    section.testimonials{padding:40px 0}
+    .test-row{display:flex;gap:12px;overflow:auto;padding-bottom:6px}
+    .test{min-width:260px;background:var(--card);padding:16px;border-radius:12px;box-shadow:0 8px 24px rgba(10,10,10,0.04)}
+
+    /* Contact */
+    section.contact{padding:40px 0}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    input,textarea,button{padding:12px;border-radius:10px;border:1px solid rgba(10,10,10,0.06);font-size:14px}
+    textarea{grid-column:1/-1;min-height:120px}
+    .foot{padding:18px 0;color:var(--muted);font-size:14px}
+
+    footer{padding:36px 0 80px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      nav .nav-links{display:none}
+    }
+    @media (max-width:600px){
+      .grid{grid-template-columns:1fr}
+      header{position:static}
+      .hero{padding-top:90px}
+      .brand .name{display:none}
+      form{grid-template-columns:1fr}
+    }
+
+    /* small animations */
+    .fade-in{opacity:0;transform:translateY(8px);animation:enter .7s forwards}
+    @keyframes enter{to{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo">V</div>
+          <div>
+            <div style="font-size:15px">Vee Link Technologies</div>
+            <div style="font-size:12px;color:var(--muted);margin-top:2px">Training & Placement</div>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#courses">Courses</a>
+          <a href="#placements">Placements</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact" class="cta">Enroll Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1 class="headline">Upskill fast. Get placed sooner.</h1>
+          <p class="tagline">Empowering careers — bridging training & placement for freshers and working professionals.</p>
+
+          <div class="features">
+            <div class="chip">Industry-ready curriculum</div>
+            <div class="chip">Live projects & internships</div>
+            <div class="chip">Resume + Interview prep</div>
+            <div class="chip">Placement support</div>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+            <a class="cta" href="#contact">Join a Batch</a>
+            <a href="#courses" style="padding:8px 14px;border-radius:10px;background:transparent;border:1px solid rgba(16,24,16,0.06);">View Courses</a>
+          </div>
+
+          <div style="margin-top:22px;color:var(--muted);font-size:14px">Phone: <strong>+91-7667959354</strong> &nbsp; • &nbsp; Email: <strong>veelinktechnologies@gmail.com</strong></div>
+        </div>
+
+        <div class="hero-card fade-in">
+          <h4>Why Vee Link?</h4>
+          <p>We combine hands-on training with placement assistance. Short-term batches, flexible timings, and mentorship by industry trainers.</p>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid rgba(10,10,10,0.04)" />
+
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <div>
+                <div style="font-size:13px;color:var(--muted)">Top Courses</div>
+                <div style="font-weight:700">Data Analytics, Fullstack, Manual Testing</div>
+              </div>
+              <div style="font-size:12px;color:var(--muted)">Batches start soon</div>
+            </div>
+
+            <div style="display:flex;gap:8px">
+              <div style="flex:1;background:#f7fff7;padding:10px;border-radius:10px;text-align:center;font-weight:700">Flexible Timings</div>
+              <div style="flex:1;background:#f7fff7;padding:10px;border-radius:10px;text-align:center;font-weight:700">Placement Assistance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="courses">
+      <h3>Our Courses</h3>
+      <p style="color:var(--muted);margin-top:6px">Career-focused programs — choose your path.</p>
+
+      <div class="grid" style="margin-top:18px">
+        <div class="course">
+          <h5>Data Analytics</h5>
+          <p>Excel, SQL, Python for analytics, Tableau & Power BI. Projects and placement support.</p>
+        </div>
+        <div class="course">
+          <h5>Fullstack Development</h5>
+          <p>HTML, CSS, JavaScript, React, Node.js — build real web apps and portfolio projects.</p>
+        </div>
+        <div class="course">
+          <h5>Manual Testing</h5>
+          <p>Software testing fundamentals, test cases, defect life-cycle, real-world testing scenarios.</p>
+
+        </div>
+        <div class="course">
+          <h5>Automation Testing</h5>
+          <p>Selenium WebDriver, TestNG, automation frameworks, CI integration and best practices.</p>
+        </div>
+        <div class="course">
+          <h5>Machine Learning</h5>
+          <p>Supervised & unsupervised learning, model building, evaluation, and deployment basics.</p>
+        </div>
+        <div class="course">
+          <h5>Data Science</h5>
+          <p>End-to-end data science projects — data cleaning, modeling, visualization and storytelling.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="placements" style="padding:24px 0">
+      <h3>Placements & Partnerships</h3>
+      <p style="color:var(--muted);margin-top:6px">We help connect learners with companies through interviews, assessments and referral partnerships.</p>
+
+      <div style="display:flex;gap:12px;margin-top:16px;flex-wrap:wrap">
+        <div style="background:var(--card);padding:12px;border-radius:10px;box-shadow:0 8px 24px rgba(10,10,10,0.04)">Placement Support</div>
+        <div style="background:var(--card);padding:12px;border-radius:10px;box-shadow:0 8px 24px rgba(10,10,10,0.04)">Interview Prep</div>
+        <div style="background:var(--card);padding:12px;border-radius:10px;box-shadow:0 8px 24px rgba(10,10,10,0.04)">Resume Assistance</div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <h3>Testimonials</h3>
+      <div class="test-row" style="margin-top:12px">
+        <div class="test">
+          <div style="font-weight:700">Arjun R.</div>
+          <div style="color:var(--muted);font-size:13px">Placed as Jr. Data Analyst — Great projects and mentor support.</div>
+        </div>
+        <div class="test">
+          <div style="font-weight:700">Priya S.</div>
+          <div style="color:var(--muted);font-size:13px">Learned fullstack and built my portfolio. Got placed within 2 months.</div>
+        </div>
+        <div class="test">
+          <div style="font-weight:700">Rahul K.</div>
+          <div style="color:var(--muted);font-size:13px">Excellent automation training — practical and easy to follow.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact & Enroll</h3>
+      <p style="color:var(--muted);margin-top:6px">Ready to join? Fill the form and we'll call you.</p>
+
+      <div style="margin-top:12px;display:flex;gap:18px;align-items:flex-start">
+        <form id="enrollForm">
+          <input type="text" name="name" placeholder="Full name" required />
+          <input type="tel" name="phone" placeholder="Phone (e.g. +91-7667959354)" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" name="course" placeholder="Course interested (e.g. Data Analytics)" required />
+          <textarea name="message" placeholder="Any message (optional)"></textarea>
+          <button type="submit" class="cta">Submit Enquiry</button>
+        </form>
+
+        <div style="flex:1;max-width:340px">
+          <div style="background:var(--card);padding:16px;border-radius:12px;box-shadow:0 8px 24px rgba(10,10,10,0.04)">
+            <h4 style="margin:0 0 6px">Contact Info</h4>
+            <div style="color:var(--muted);font-size:14px">Phone: <strong>+91-7667959354</strong></div>
+            <div style="color:var(--muted);font-size:14px;margin-top:6px">Email: <strong>veelinktechnologies@gmail.com</strong></div>
+            <div style="color:var(--muted);font-size:14px;margin-top:10px">Address: Chennai, Tamil Nadu (update as needed)</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="foot">© <strong>Vee Link Technologies</strong> • Phone: +91-7667959354 • Email: veelinktechnologies@gmail.com</div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Smooth scrolling for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        const t=document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    })
+
+    // Simple form handler (local demo) — replace with server/API or email integration later
+    document.getElementById('enrollForm').addEventListener('submit',function(e){
+      e.preventDefault();
+      const data = new FormData(this);
+      const payload = Object.fromEntries(data.entries());
+      // Minimal validation already via required attributes
+      // For GitHub Pages (static) we can't send the data server-side — so we'll open mailto as fallback
+      const subject = encodeURIComponent('New Enrollment: ' + payload.name + ' — ' + payload.course);
+      let body = 'Name: '+payload.name+'%0APhone: '+payload.phone+'%0AEmail: '+payload.email+'%0ACourse: '+payload.course+'%0AMessage: '+(payload.message||'') ;
+      window.location.href = 'mailto:veelinktechnologies@gmail.com?subject='+subject+'&body='+body;
+    });
+  </script>
+</body>
+</html>
